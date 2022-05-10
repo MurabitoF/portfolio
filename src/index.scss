@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+$black: #030303;
+$gray: #EFEFEF;
+$pink: #F50CA0;
+$cyan: #43DDE2;
+
+$font-family: 'Inter', sans-serif;
+
+html{
+  *{
+    box-sizing: border-box;
+    font-family: $font-family;
+    color: $gray;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
