@@ -1,0 +1,60 @@
+.home {
+    padding: 3em 2em;
+    height: 75vh;
+}
+
+.hero-texts {
+    text-align: center;
+}
+
+.text-lg {
+    font-size: 3em;
+    margin: 0;
+}
+
+#first-text {
+    margin-top: 1.5em;
+}
+
+.text-xl {
+    margin: 0.5em 0;
+    font-size: 4.5em;
+    transition: text-shadow 150ms ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .home {
+        background-image: url('../../../public/kyle-sung-oQuP_XBjOMY-unsplash.jpg');
+        background-size: 80%;
+        background-position: top 70% right -80%;
+        background-repeat: no-repeat;
+    }
+
+    .hero-texts {
+        text-align: left;
+    }
+
+    .buttons {
+        margin-top: .5em;
+        width: 70%;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .buttons {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .buttons {
+        width: 30%;
+    }
+}

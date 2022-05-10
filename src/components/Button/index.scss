@@ -1,0 +1,26 @@
+$black: #030303;
+$gray: #EFEFEF;
+$pink: #F50CA0;
+
+button {
+
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: .75em 1.5em;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+.solid {
+    color: $black;
+    background-color: $gray;
+}
+
+.outline {
+    color: $gray;
+    background-color: transparent;
+    border: 3px solid $gray;
+}

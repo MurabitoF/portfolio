@@ -16,3 +16,15 @@ body {
   color: $gray;
   background-color: $black;
 }
+
+.text-hover-effect:hover,
+.text-hover-effect:focus {
+  transition: text-shadow 150ms ease-in-out;
+  text-shadow: -3px 3px 0 $cyan, 3px -3px 0 $pink;
+}
+
+.hover-effect:hover,
+.text-hover-effect:focus {
+  transition: box-shadow 150ms ease-in-out;
+  box-shadow: -2px 2px 0 $cyan, 2px -2px 0 $pink;
+}
