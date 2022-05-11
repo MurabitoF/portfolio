@@ -1,6 +1,4 @@
-$black: #030303;
-$gray: #EFEFEF;
-$pink: #F50CA0;
+@use "/src/utils/variables" as v;
 
 button {
 
@@ -15,12 +13,12 @@ button {
 }
 
 .solid {
-    color: $black;
-    background-color: $gray;
+    color: v.$black;
+    background-color: v.$gray;
 }
 
 .outline {
-    color: $gray;
+    color: v.$gray;
     background-color: transparent;
-    border: 3px solid $gray;
+    border: 3px solid v.$gray;
 }

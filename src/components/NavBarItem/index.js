@@ -7,8 +7,6 @@ const NavBarItem = ({ children, link }) => {
 
   const selected = pathname === link
 
-  console.log(location)
-
   return (
     <Link to={link} className={selected ? 'nav-item nav-item-selected' : 'nav-item'}>
         <h3>{children}</h3>

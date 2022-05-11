@@ -1,0 +1,15 @@
+.projects {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+
+.projects-grid-container {
+    display: grid;
+    width: 100%;
+    margin: 1em 0;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 1em;
+    row-gap: 2em;
+    justify-items: center;
+}

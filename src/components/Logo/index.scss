@@ -1,11 +1,7 @@
-$black: #030303;
-$gray: #EFEFEF;
-$pink: #F50CA0;
-$cyan: #43DDE2;
-
+@use "/src/utils/variables" as v;
 
 .logo {
-    color: $gray;
+    color: v.$gray;
     font-size: 3rem;
     font-weight: 900;
     text-decoration: none;

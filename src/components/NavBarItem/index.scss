@@ -1,13 +1,11 @@
-$gray: #EFEFEF;
-$pink: #F50CA0;
-$cyan: #43DDE2;
+@use "/src/utils/variables" as v;
 
 .nav-item {
     font-size: 1.25rem;
-    color: $gray;
+    color: v.$gray;
     text-decoration: none;
 }
 
 .nav-item-selected {
-    text-shadow: -1px 1px 0 $cyan, 1px -1px 0 $pink;
+    text-shadow: -1px 1px 0 v.$cyan, 1px -1px 0 v.$pink;
 }

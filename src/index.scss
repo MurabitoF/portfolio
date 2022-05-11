@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@use "/src/utils/variables" as v;
 
-$black: #030303;
-$gray: #EFEFEF;
-$pink: #F50CA0;
-$cyan: #43DDE2;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
 
 $font-family: 'Inter', sans-serif;
 
@@ -13,18 +11,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   font-family: $font-family;
-  color: $gray;
-  background-color: $black;
+  color: v.$gray;
+  background-color: v.$black;
 }
 
 .text-hover-effect:hover,
 .text-hover-effect:focus {
   transition: text-shadow 150ms ease-in-out;
-  text-shadow: -3px 3px 0 $cyan, 3px -3px 0 $pink;
+  text-shadow: -3px 3px 0 v.$cyan, 3px -3px 0 v.$pink;
 }
 
 .hover-effect:hover,
 .text-hover-effect:focus {
   transition: box-shadow 150ms ease-in-out;
-  box-shadow: -2px 2px 0 $cyan, 2px -2px 0 $pink;
+  box-shadow: -2px 2px 0 v.$cyan, 2px -2px 0 v.$pink;
+}
+
+.text-lg {
+  font-size: 3em;
+  margin: 0;
 }

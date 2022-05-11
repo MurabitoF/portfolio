@@ -1,0 +1,102 @@
+@use "/src/utils/variables" as v;
+
+
+.card {
+    color: v.$black;
+    background-color: v.$gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 15em;
+    height: 20em;
+    padding: .125em 2em;
+    border-radius: 15px;
+
+    p {
+        transition: transform 200ms ease-in-out;
+    }
+
+    h3 {
+        transition: text-shadow 200ms ease-in-out;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    h4 {
+        transition: text-shadow 200ms ease-in-out;
+        margin: 0;
+    }
+
+    ul {
+        li {
+            transition: font-weight 200ms ease-in-out;
+        }
+    }
+}
+
+.card:hover {
+    p {
+        transition: transform 200ms ease-in-out;
+        transform: scale(1.05);
+    }
+
+    h3 {
+        transition: text-shadow 200ms ease-in-out;
+        text-shadow: -2px 2px 0 v.$cyan, 2px -2px 0 v.$pink;
+    }
+
+    h4 {
+        transition: text-shadow 200ms ease-in-out;
+        text-shadow: -1px 1px 0 v.$cyan, 1px -1px 0 v.$pink;
+    }
+
+    ul {
+        li {
+            transition: font-weight 200ms ease-in-out;
+            font-weight: 500;
+        }
+    }
+}
+
+.card-description {
+    margin: 0;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.card-list-tech {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+        margin: 0 0.25em;
+    }
+}
+
+.card-button {
+    width: 100%;
+    text-decoration: none;
+    color: v.$gray;
+    background-color: v.$black;
+    font-weight: 700;
+    text-align: center;
+    margin: .75em 0;
+    padding: .5em .75em;
+    border-radius: 9999px;
+    transition: box-shadow 150ms ease-in-out;
+}
+
+.svg-hover-effect:hover,
+.svg-hover-effect:focus {
+    filter: drop-shadow(-3px 3px 0 v.$cyan) drop-shadow(3px -3px 0 v.$pink);
+}
