@@ -1,0 +1,32 @@
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 3em;
+    text-align: center;
+    padding: 1em 3em;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.about-me-photo {
+    width: 300px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .about-me-photo {
+        width: 30%;
+    }
+
+    .about-me-info {
+        width: 50%;
+    }
+}

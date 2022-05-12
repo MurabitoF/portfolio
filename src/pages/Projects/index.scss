@@ -15,7 +15,12 @@
     justify-items: center;
 }
 
+.svg-hover-effect {
+    transition: all 200ms ease-in-out;
+}
+
 .svg-hover-effect:hover,
 .svg-hover-effect:focus {
+    transition: all 200ms ease-in-out;
     filter: drop-shadow(-3px 3px 0 v.$cyan) drop-shadow(3px -3px 0 v.$pink);
 }
