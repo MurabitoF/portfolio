@@ -5,6 +5,12 @@
 
 $font-family: 'Inter', sans-serif;
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -25,6 +31,11 @@ body {
 .text-hover-effect:focus {
   transition: box-shadow 150ms ease-in-out;
   box-shadow: -2px 2px 0 v.$cyan, 2px -2px 0 v.$pink;
+}
+
+.svg-hover-effect:hover,
+.svg-hover-effect:focus {
+  filter: drop-shadow(-3px 3px 0 v.$cyan) drop-shadow(3px -3px 0 v.$pink);
 }
 
 .text-lg {

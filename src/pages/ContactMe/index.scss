@@ -1,0 +1,62 @@
+.contact-me {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .contact-section {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: .5em 1em;
+    }
+
+    form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-text {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.contact-icons {
+    margin: 4em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-me {
+        .contact-section {
+            width: 50%;
+        }
+
+        .contact-section:nth-child(2) {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .submit-btn {
+            width: 30%;
+            padding: .5em 0;
+        }
+
+        form {
+            width: 80%;
+            align-items: flex-end;
+        }
+    }
+
+    .contact-text {
+        text-align: left;
+    }
+}

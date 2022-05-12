@@ -1,0 +1,42 @@
+@use '../../utils/variables' as v;
+
+.input {
+    width: 100%;
+    margin: .5em 0;
+}
+
+.input-label {
+    display: flex;
+    margin: .25em 0;
+    justify-content: space-between;
+
+    label {
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    small {
+        font-size: 1em;
+        color: #F72119;
+    }
+}
+
+.input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    padding: .5em 5px;
+}
+
+.input-field:focus,
+.input-field:active {
+    transition: box-shadow 150ms ease-in-out;
+    box-shadow: -2px 2px 0 v.$cyan, 2px -2px 0 v.$pink;
+}
+
+.text-area {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}

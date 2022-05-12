@@ -1,9 +1,9 @@
 import React from 'react'
 import './index.scss'
 
-const ButtonSolid = ({ children, action }) => {
+const ButtonSolid = ({ children, action, type, className }) => {
   return (
-    <button className='solid hover-effect' onClick={action}>{children}</button>
+    <button type={type} className={`solid hover-effect ${className}`} onClick={action}>{children}</button>
   )
 }
 

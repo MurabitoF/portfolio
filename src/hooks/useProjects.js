@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 
 const useProjects = (user, sizePage) => {
-  console.log(user, sizePage)
-
   const [repos, setRepos] = useState([])
   const url = `https://api.github.com/users/${user}/repos?sort=created&per_page=${sizePage}`
 
