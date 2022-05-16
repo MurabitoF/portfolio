@@ -27,12 +27,6 @@
         transition: text-shadow 200ms ease-in-out;
         margin: 0;
     }
-
-    ul {
-        li {
-            transition: font-weight 200ms ease-in-out;
-        }
-    }
 }
 
 .card:hover {
@@ -51,12 +45,6 @@
         text-shadow: -1px 1px 0 v.$cyan, 1px -1px 0 v.$pink;
     }
 
-    ul {
-        li {
-            transition: font-weight 200ms ease-in-out;
-            font-weight: 500;
-        }
-    }
 }
 
 .card-description {
