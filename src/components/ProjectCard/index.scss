@@ -12,10 +12,7 @@
     height: 20em;
     padding: .125em 2em;
     border-radius: 15px;
-
-    p {
-        transition: transform 200ms ease-in-out;
-    }
+    transition: transform 100ms ease-in-out;
 
     h3 {
         transition: text-shadow 200ms ease-in-out;
@@ -30,10 +27,8 @@
 }
 
 .card:hover {
-    p {
-        transition: transform 200ms ease-in-out;
-        transform: scale(1.05);
-    }
+    transition: transform 100ms ease-in-out;
+    transform: scale(1.05);
 
     h3 {
         transition: text-shadow 200ms ease-in-out;

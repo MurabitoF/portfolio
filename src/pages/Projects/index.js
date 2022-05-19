@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
-import Card from '../../components/Card'
+import ProjectCard from '../../components/ProjectCard'
 import Loader from '../../components/Loader'
 import useProjects from '../../hooks/useProjects'
 import './index.scss'
@@ -16,7 +16,7 @@ const Projects = () => {
         : (
       <div className='projects-grid-container'>
         {repos.map(repo => {
-          return <Card key={repo.title} {...repo} />
+          return <ProjectCard key={repo.title} {...repo} />
         })}
       </div>
           )}

@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-const Card = ({ title, description, technologies, url }) => {
+const ProjectCard = ({ title, description, technologies, url }) => {
   return (
     <div className='card'>
         <h3>{title.replaceAll('-', ' ').toUpperCase()}</h3>
@@ -19,4 +19,4 @@ const Card = ({ title, description, technologies, url }) => {
   )
 }
 
-export default Card
+export default ProjectCard

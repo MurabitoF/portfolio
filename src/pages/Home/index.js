@@ -12,7 +12,7 @@ const Home = () => {
         <h1 className='text-lg' id='first-text'>Hello,</h1>
         <h1 className='text-xl text-hover-effect'>I am Franco Murabito</h1>
         <h1 className='text-lg'>and I am a</h1>
-        <h1 className='text-xl text-hover-effect'>JS Fullstack Developer</h1>
+        <h1 className='text-xl text-hover-effect'>Frontend Developer</h1>
       </div>
       <div className='buttons'>
         <ButtonSolid action={() => navigate('/projects')}>My Projects</ButtonSolid>
