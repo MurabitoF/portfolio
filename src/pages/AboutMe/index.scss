@@ -1,3 +1,5 @@
+@use '../../utils/variables' as v;
+
 .about-me {
     width: 100%;
     display: flex;
@@ -9,6 +11,7 @@
 
     p {
         text-align: justify;
+        font-size: 1.1em;
     }
 }
 
@@ -16,9 +19,108 @@
     width: 300px;
 
     img {
-        width: 100%;
-        border-radius: 9999px;
+        width: 80%;
     }
+}
+
+.about-me-skills {
+    width: 100%;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            cursor: default;
+            width: 150px;
+            height: 150px;
+            color: v.$gray;
+            list-style: none;
+            margin: 1em;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 200ms ease-out;
+
+            span {
+                margin-top: .5em;
+                display: block;
+                font-weight: 500;
+            }
+        }
+
+
+        li:hover {
+            transition: all 200ms ease-in;
+            transform: scale(1.3);
+        }
+
+        #html:hover {
+            color: #E44D26;
+        }
+
+        #css:hover {
+            color: #1E5DA6;
+        }
+
+        #js:hover {
+            color: #f7df1e;
+        }
+
+        #ts:hover {
+            color: #3178C6;
+        }
+
+        #react:hover {
+            color: #61DAFB;
+        }
+
+        #node:hover {
+            color: #43853D;
+        }
+
+        #express:hover {
+            color: #585858;
+        }
+
+        #mysql:hover {
+            color: #F29111;
+        }
+
+        #mongo:hover {
+            color: #00ED64;
+        }
+
+        #sequelize:hover {
+            color: #36457B;
+        }
+
+    }
+}
+
+.about-me-hobbies {
+    width: 100%;
+
+    p {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            width: 100%;
+            margin: .25em 0;
+        }
+    }
+
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -29,5 +131,13 @@
 
     .about-me-info {
         width: 50%;
+    }
+
+    .about-me-hobbies {
+        ul {
+            li {
+                width: 33%;
+            }
+        }
     }
 }
