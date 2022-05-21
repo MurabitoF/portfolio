@@ -1,5 +1,4 @@
 .home {
-    padding: 3em 1em;
     height: 75vh;
 }
 
@@ -11,24 +10,33 @@
     margin-top: 1.5em;
 }
 
+// font-size: 4.5em;
+
 .text-xl {
     margin: 0.5em 0;
-    font-size: 4.5em;
+    font-size: 3.5em;
     transition: text-shadow 150ms ease-in-out;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-around;
     width: 100%;
+
+    * {
+        width: 100%;
+        margin-top: 1em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .home {
         background-image: url('../../../public/kyle-sung-oQuP_XBjOMY-unsplash.jpg');
         background-size: 80%;
-        background-position: top 70% right -80%;
+        background-position: top -100px right -80px;
         background-repeat: no-repeat;
+    }
+
+    .text-xl {
+        font-size: 4.5em;
     }
 
     .hero-texts {
@@ -36,20 +44,43 @@
     }
 
     .buttons {
+        display: flex;
         margin-top: .5em;
         width: 70%;
         justify-content: space-between;
+
+        * {
+            width: 50%;
+            margin: 0 5px;
+        }
     }
 }
 
 @media only screen and (min-width: 992px) {
+    .home {
+        background-position: top -200px right -100px;
+    }
+
     .buttons {
-        width: 50%;
+        * {
+            width: 40%;
+        }
     }
 }
 
 @media only screen and (min-width: 1440px) {
+    .home {
+        background-position: top -550px right -200px;
+    }
+
     .buttons {
-        width: 30%;
+        width: 50%;
+
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .home {
+        background-position: top -650px right -250px;
     }
 }
