@@ -2,8 +2,8 @@ import React from 'react'
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaDiceD20, FaGuitar } from 'react-icons/fa'
 import { SiJavascript, SiExpress, SiMysql, SiTypescript, SiMongodb, SiSequelize } from 'react-icons/si'
 import { IoLogoGameControllerB } from 'react-icons/io'
-import './index.scss'
 import HobbieCard from '../../components/HobbieCard'
+import './index.scss'
 
 const AboutMe = () => {
   return (
@@ -14,7 +14,7 @@ const AboutMe = () => {
       <div className='about-me-info'>
         <h2 className='text-lg text-hover-effect'>About Me</h2>
         <p>
-          I'm Franco Murabito, I like technology and that's why I started to get into the world of programming. I graduated from UTN as a university technician in programming in 2021. {/*eslint-disable-line*/}
+          I'm Franco Murabito, technology is one of my passions and that's why I started to get into the world of programming. I graduated from UTN as a university technician in programming in 2021. {/*eslint-disable-line*/}
         </p>
         <p>
           I focus as a web developer, I like especially the Frontend using ReactJS and environment technologies such as Redux, NextJS. I am also proficient in pure CSS, Sass, Bootstrap, Tailwind CSS.

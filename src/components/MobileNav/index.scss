@@ -1,0 +1,97 @@
+@use '../../utils/variables' as v;
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .burger-menu {
+        width: 40px;
+        height: 45px;
+        position: relative;
+        margin: 50px auto;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        span {
+            display: block;
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background: v.$gray;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+            top: 0;
+        }
+
+        span:nth-child(2) {
+            top: 10px;
+        }
+
+        span:nth-child(3) {
+            top: 20px;
+        }
+
+        &.open {
+            span:nth-child(1) {
+                top: 10px;
+                -webkit-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+                left: 60px;
+            }
+
+            span:nth-child(3) {
+                top: 10px;
+                -webkit-transform: rotate(-135deg);
+                -moz-transform: rotate(-135deg);
+                -o-transform: rotate(-135deg);
+                transform: rotate(-135deg);
+            }
+
+        }
+
+    }
+
+    .mobile-nav-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba($color: v.$black, $alpha: 0.7);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        height: 350px;
+        padding: .25em 0;
+        transition: all .25s ease-in-out;
+        opacity: 1;
+    }
+
+    .closed {
+        transform: translateY(-150px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .mobile-nav {
+        display: none;
+    }
+}
